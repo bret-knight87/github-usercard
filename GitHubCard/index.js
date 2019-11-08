@@ -80,6 +80,7 @@ function cardMaker(obj){
   const cardUserProfileLink = document.createElement('a');
   cardUserProfileLink.href = obj.html_url;
   cardUserProfileLink.textContent = obj.html_url;
+  cardUserProfileLink.target = '_blank';
 
   const cardUserFollowersCount = document.createElement('p');
   cardUserFollowersCount.textContent = `Followers: ${obj.followers}`;
